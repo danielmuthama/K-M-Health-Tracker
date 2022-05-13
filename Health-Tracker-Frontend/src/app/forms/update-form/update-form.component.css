@@ -1,0 +1,10 @@
+.submit-form {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.card {
+    max-width: 500px;
+    margin: 100px;
+    border-radius: 10px;
+}

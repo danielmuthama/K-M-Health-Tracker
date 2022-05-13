@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="submit-form">
+    <form *ngIf="!submitted">
+        <div class="form-group">
+            <label for="first_name">First Name: </label>
+            <input type="text" class="form-control" id="first_name" placeholder="First Name" [(ngModel)]="dataForm.first_name" name="first_name">
+        </div>
+        <div class="form-goup">
+            <label for="last_name">Last Name: </label>
+            <input type="text" class="form-control" id="last_name" placeholder="Last Name" [(ngModel)]="dataForm.last_name" name="last_name">
+        </div>
+        <div class="form-group">
+            <label for="age">Age: </label>
+            <input type="number" class="form-control" id="age" placeholder="Age" [(ngModel)]="dataForm.age" name="age">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender: </label>
+            <input type="text" class="form-control" id="gender" placeholder="Gender" [(ngModel)]="dataForm.gender" name="gender">
+        </div>
+        <div class="form-group">
+            <label for="signs_and_symptoms">Signs and Symptoms: </label>
+            <input type="text" class="form-control" id="signs_and_symptoms" placeholder="Signs and Symptoms" [(ngModel)]="dataForm.signs_and_symptoms" name="signs_and_symptoms">
+        </div>
+        <!-- <div class="form-group">
+            <label for="condition">Condition: </label>
+            <input type="text" class="form-control" id="condition" placeholder="Condition" [(ngModel)]="dataForm.condition" name="condition">
+        </div> -->
+        <div class="form-group">
+            <label for="test">Test: </label>
+            <input type="text" class="form-control" id="test" placeholder="Test" [(ngModel)]="dataForm.test" name="test">
+        </div>
+        <div class="form-group">
+            <label for="disease_found">Disease Found: </label>
+            <input type="text" class="form-control" id="disease_found" placeholder="Disease Found" [(ngModel)]="dataForm.disease_found" name="disease_found">
+        </div>
+        <div class="form-group">
+            <label for="patient_type">Type of Patient: </label>
+            <input type="text" class="form-control" id="patient_type" placeholder="Type of Patient" [(ngModel)]="dataForm.patient_type" name="patient_type">
+        </div>
+        <button (click) = "saveDataForm()" class="btn btn-info">Submit</button>
+    </form>
+    <div *ngIf = "submitted">
+        <h4>Patient was added successfully</h4>
+        <button class="btn btn-info" (click)="newDataForm()">Add</button>
+    </div>
+</div>
+</div>
+<app-about></app-about>
+

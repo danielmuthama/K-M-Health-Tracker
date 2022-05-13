@@ -1,0 +1,66 @@
+#home {
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+background-image: url(https://imageio.forbes.com/blogs-images/bernardmarr/files/2018/07/AdobeStock_157266517-1200x640.jpeg?format=jpg&width=1200);
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: -100px;
+margin-bottom: 13%;
+}
+
+.row {
+height: 100vh;
+}
+
+.content {
+margin-top: -40%;
+margin-left: -200px;
+}
+.content p {
+font-size: 250%;
+font-family: "lemonada", sans-serif;
+font-weight: bolder;
+text-shadow: 0.1rem 0.1rem 0.3rem #333;
+color: white;
+text-align: center;
+}
+
+/* About */
+.about {
+font-size: 30px;
+font-weight: 700;
+height: 40rem;
+}
+
+.abt_us {
+    margin-top: 500px;
+}
+
+#about {
+margin-top: -22.8%;
+margin-left: 20px;
+}
+
+#about ul {
+list-style-type: circle;
+list-style-type: circle;
+
+}
+
+#about h1 {
+    /* text-align: center; */
+color: black;
+/* text-decoration: underline; */
+font-weight: bolder;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.parag {
+font-size: 100%;
+font-weight: 445;
+}
+
+.parag2 {
+font-size: 100%;
+font-weight: 400;
+}

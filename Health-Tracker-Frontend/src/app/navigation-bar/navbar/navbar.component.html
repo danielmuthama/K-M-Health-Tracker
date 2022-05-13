@@ -1,0 +1,86 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+<script src="https://kit.fontawesome.com/75ea6cc427.js" crossorigin="anonymous"></script>
+
+<!-- header starts here -->
+<header>
+    <div class="menu-bar">
+        <a href="">
+            <img src="assets/img/logo-.png" alt="logo" height="100px">
+        </a>
+        <ul>
+            <li><a routerLink="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <!-- <li><a routerLink="about">About</a></li> -->
+            <!-- <nav class="navbar navbar-expand navbar-dark bg-dark"> -->
+                <!-- <li class="nav-item">
+                    <a routerLink="data" class="navbar-brand">View Patients</a>
+                </li> -->
+                <!-- <div class="navbar-nav mr-auto"> -->
+                    <!-- <li class="nav-item">
+                        <a routerLink="add" class="nav-link">Add Patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="lab" class="nav-link">KEMRI</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a href="http://localhost:3000/">Chat</a>
+                    </li> -->
+                <!-- </div> -->
+            <!-- </nav> -->
+
+            <li class="far-right" *ngIf="!authenticated">
+                <a href="#">Login <i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                            <a>Moringa <i class="fas fa-caret-right"></i></a>
+                            
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                <li><a routerLink="moringaAdmin">MoringaAdmin </a></li>
+                                <!-- <li><a href="http://127.0.0.1:7000/admin">MoringaAdmin </a></li> -->
+                                <div class="dropdown-divider"></div>
+                                <li><a routerLink="moringaStaff">Moringa-Staff</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                            <a>Kemri <i class="fas fa-caret-right"></i></a>
+                            
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                <div class="dropdown-divider"></div>
+                                <li><a routerLink="kemriAdmin">Kemri-Admin</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a routerLink="kemriStaff">Kemri-Staff</a></li>
+                                
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li><a routerLink="driverLogin">Driver</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="far-right" *ngIf="authenticated">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a routerLink="" class="nav-link" (click)="logout()">Logout</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="hero">
+    &nbsp;
+    </div>
+    <!-- header ends here -->
+</header>

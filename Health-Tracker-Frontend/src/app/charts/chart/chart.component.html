@@ -1,0 +1,111 @@
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.esm.js" integrity="sha512-jUlTTDoq6IvZiinGFQetLcklithBTp8sVUkkUBEYQvYd3hwMuCTd59kAzVpJwvRTmZ2palO++nX+vKC+cK9lqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.esm.min.js" integrity="sha512-ESlgC6ZyzTZdmD7XoDrXJNOqoIugH+FNKg8nAk8sa3cZfFALiV+lo5xoia649oyygwnkKsdUdPAJ+puqGbOs+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/helpers.esm.js" integrity="sha512-DfyVRytIoS7LXOzmxSD4//oV81uwh1xV/EuK/xeh5gVJycOdBj+XTl7jeM6bcy7jiBIabR/9S2uyRL3oKKustw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/helpers.esm.min.js" integrity="sha512-urWBnIv+F027G24xDNigjxvIuwnWlWy94W2yx77VkISKLzKSohOKOubMDhtEF6LZcEH7gctmNSpxDqIW/zMmUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<!-- <div id="divChart">
+    <canvas id="myChart"></canvas>
+</div> -->
+
+<!-- <div class="container">
+    <div style="width:100%;">
+        <canvas id="myChart" width="700" height="250" #mychart></canvas>
+    </div>
+</div> -->
+
+
+<!-- <div>
+    <div style="display: block">
+        <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                **[type]**="barChartType">
+        </canvas>
+    </div>
+</div> -->
+
+
+
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+    <a class="navbar-brand" href="#">DISEASES</a>
+</nav>
+
+<div class="container">
+    <div class="card mt-2">
+        <div class="card-body">
+        <h4 class="card-title">Bar Chart</h4>
+        <canvas
+            baseChart
+            [data]="diseaseData"
+            [type]="'bar'"
+            [options]="chartOptions"
+        >
+        </canvas>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="card-body">
+        <h4 class="card-title">Line Chart</h4>
+        <canvas
+            baseChart
+            [data]="diseaseData"
+            [type]="'polarArea'"
+            [options]="chartOptions"
+        >
+        </canvas>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="card-body">
+        <h4 class="card-title">Line Chart</h4>
+        <canvas
+            baseChart
+            [data]="diseaseData"
+            [type]="'line'"
+            [options]="chartOptions"
+        >
+        </canvas>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="card-body">
+        <h4 class="card-title">Line Chart</h4>
+        <canvas
+            baseChart
+            [data]="diseaseData"
+            [type]="'pie'"
+            [options]="chartOptions"
+        >
+        </canvas>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="card-body">
+        <h4 class="card-title">Line Chart</h4>
+        <canvas
+            baseChart
+            [data]="diseaseData"
+            [type]="'radar'"
+            [options]="chartOptions"
+        >
+        </canvas>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="card-body">
+        <h4 class="card-title">Line Chart</h4>
+        <canvas
+            baseChart
+            [data]="diseaseData"
+            [type]="'doughnut'"
+            [options]="chartOptions"
+        >
+        </canvas>
+        </div>
+    </div>
+</div>
+<app-about></app-about>

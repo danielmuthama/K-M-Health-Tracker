@@ -1,0 +1,102 @@
+.logo {
+color: white;
+font-size: 30px;
+}
+
+.logo span {
+color: var(--color-primary);
+}
+
+.menu-bar {
+background-color: rgb(15, 126, 201);
+height: 80px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 5%;
+position: relative;
+}
+
+.menu-bar ul {
+list-style: none;
+display: flex;
+width: 75%;
+color: #fff;
+font-weight: 500;
+}
+
+img {
+margin-left: 300px;
+}
+
+.menu-bar ul li {
+/* width: 120px; */
+padding: 10px 30px;
+/* text-align: center; */
+
+position: relative;
+}
+
+.menu-bar ul .far-right {
+margin-left: 400px;
+}
+
+.menu-bar ul li a {
+font-size: 20px;
+color: var(--color-white);
+text-decoration: none;
+
+transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+color: black;
+}
+
+.fas {
+float: right;
+margin-left: 10px;
+padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+display: none;
+background: #fff;
+background-color: #fff;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+display: block;
+position: absolute;
+left: 0;
+top: 100%;
+background-color: #fff;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+display: block;
+margin: 10px;
+background-color: #fff;
+color: rgb(0, 0, 0);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+width: 150px;
+padding: 10px;
+margin-right: 40px;
+}
+
+.dropdown-menu-1 {
+display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+display: block;
+position: absolute;
+left: 150px;
+top: 0;
+background-color: var(--color-black);
+}
+

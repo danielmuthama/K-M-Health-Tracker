@@ -1,0 +1,105 @@
+#about {
+font-size: 120%;
+margin-bottom: 100px;
+margin-left: 20px;
+}
+
+#about ul {
+list-style-type: circle;
+list-style-type: circle;
+
+}
+
+#about h1 {
+color: black;
+font-weight: bolder;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+footer {
+background: rgb(0, 91, 143);
+}
+
+a:link {
+color: #fff;
+text-decoration: none;
+}
+
+a:visited {
+color: #fff;
+text-decoration: none;
+}
+
+a:hover {
+color: #fff;
+text-decoration: none;
+}
+
+a:active {
+color: #fff;
+text-decoration: none;
+}
+
+.footer-details {
+display: flex;
+}
+
+.about-footer {
+float: left;
+padding-top: 30px;
+
+color: white;
+}
+
+.contact {
+padding-right: 450px;
+padding-left: 40px;
+padding-top: 30px;
+color: white;
+}
+
+.social {
+padding-right: 400px;
+padding-top: 110px;
+}
+
+#twitter {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#linkedin {
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
+.flexicons .fa {
+font-size: 250%;
+color: #fff;
+margin-top: 20px;
+}
+
+.flexicons {
+display: flex;
+margin: 5%;
+}
+
+.contact {
+width: 45%;
+padding-right: 400px;
+padding-left: 40px;
+padding-top: 0px;
+color: white;
+}
+
+.contact p {
+text-align: left;
+padding-left: 80px;
+margin-top: -30px;
+
+}
+
+.facebook {
+margin: 30px;
+}
